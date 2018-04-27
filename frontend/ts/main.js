@@ -17,9 +17,9 @@ function validar() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var response = xmlhttp.responseText;
             response = response === "" ? "failed" : response;
-            //(<HTMLDivElement> document.getElementById("message")).innerHTML = '<img src="./drib_nudes_1x.jpg"/>';
             console.log(response);
             if (response === 'ok') {
+                document.getElementById("message").innerHTML = '<img src="./drib_nudes_1x.jpg"/>';
                 document.body.style.backgroundColor = 'green';
             }
             else {

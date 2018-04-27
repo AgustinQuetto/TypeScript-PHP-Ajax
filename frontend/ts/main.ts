@@ -23,10 +23,10 @@ function validar():void{
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             let response : string = xmlhttp.responseText;
             response = response === "" ? "failed" : response;
-            //(<HTMLDivElement> document.getElementById("message")).innerHTML = '<img src="./drib_nudes_1x.jpg"/>';
             console.log(response)
 
             if (response === 'ok') {
+                (<HTMLDivElement> document.getElementById("message")).innerHTML = '<img src="./drib_nudes_1x.jpg"/>';
                 document.body.style.backgroundColor = 'green';
             } else {
                 document.body.style.backgroundColor = 'red';
